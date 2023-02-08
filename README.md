@@ -3,13 +3,22 @@
 <ins>Repository Contents
 1. Jupyter notebooks:
 
-    a.  BERT_benchmark.ipynb:    contains EDA and the training of the initial BERT model, trained solely on the originally annotated data.
+    a.  __BERT_benchmark.ipynb__:    contains EDA and the training of the benchmark BERT model, trained solely on the originally annotated data.
     
-    b.  BERT_iterations.ipynb:   contains the training of the last iteration of the BERT model, trained on the originally annotated data, plus 3 sets of unannoated data                                  from the previous iterations.
+    b.  __BERT_iterations.ipynb__:   contains the training of the 3rd iteration of the BERT model, trained on the originally annotated data, plus 3 auxiliary sets from the previous iterations.
+    
+    c. __Zero_Shot_train.ipynb__:   contains a zero-shot BART based classification model.
 
-    Note: The notebook is tuned by default to load the h5 file we've trained. If a manual training (fit) is required, change the LOAD_MODEL_FROM_FILE and ITERATION in the Presets section.     
-    
-3. Data folder with CSV files and trained models.
+    d. __p_value_significance_evaluation.ipynb__: contains a paired t-test to compare the benchmark vs. our model.
+
+2. Data folder with:
+
+    a. CSV files: 
+        i.  __parler_annotated_data.csv__:   the originally annotated data ()
+        ii. __parler_unannotated_predictions_<ITERATION>.csv__: the zero shot perdiction of iteration ITERATION.
+        iii. __test_predicted_proba_<ITERATION>.csv__: the fine-tuned BERT test perdictions for model BERT_<ITERATION>.
+
+    b. Trained models.
 
 
 <ins>Running the Code
