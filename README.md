@@ -3,6 +3,8 @@
 
 The detection of hate speech on social media is challenging due to the difficulty in obtaining labeled data for training. This study proposes a semi-supervised learning approach using a Zero-Shot model to enhance hate speech detection. Focusing on Parler, a platform known for minimal moderation and increased hate speech, I fine-tuned a BERT-based classifier on a manually annotated dataset of around 10,000 posts. Through iterative steps, I incorporated an unannotated dataset of over 100 million posts, using a BART-based zero-shot model to identify hate against specific groups. The predictions from both models were combined to augment the annotated set, gradually improving the BERT classifier's precision without compromising recall. The approach successfully reduced false positive classifications in hate speech detection on Parler.
 
+<img width="1000" alt="image" src="https://github.com/nts-e/NLP_Parler_Hate_Detection/assets/107881111/a0e3c6c5-f89e-4b81-97a4-7d00badc9140">
+
 
 <h2>Repository Contents</h2>
 
